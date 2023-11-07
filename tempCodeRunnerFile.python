@@ -1,0 +1,26 @@
+from typing import List
+def minimumReplacement(nums: List[int]) -> int:
+  if len(nums) == 1:
+      return 0
+  
+  def helper(n, to_deal):                 # return (times needed to divide, biggest left-most num)
+      if n <= to_deal:
+          return (0, n)
+      if n % to_deal == 0:                # For example: [9, 3]
+          return (n//to_deal - 1, to_deal)
+      else:
+          times = n // to_deal            # For example: [10, 4], it should at least deivide (n1 // to_deal) times
+          x = n // (times+1)              # Since we know 10 must divided into 3 num, the biggest left-most num will be 10//3 = 3
+          return (times, x)
+  to_deal = nums[-1]                      
+  res = 0
+  i = len(nums) - 2                       # Iterate from the second-last element. 
+  
+  while i >= 0:
+      times, left_most_num = helper(nums[i], to_deal)
+      res += times
+      to_deal = left_most_num             # Update to_deal to the left_most_num .
+      i -= 1
+  
+  return res
+print(minimumReplacement([4,2,2,3]))
