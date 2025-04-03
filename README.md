@@ -8,7 +8,7 @@ The **Android Mischief Dataset** played a crucial role in our research, **["Leve
 
 All the models and methodologies presented in the paper are available in our **[Rat Detection GitHub Repository](https://github.com/JithinPonduru/Rat-Detection)**. This repository contains the implementation of detection techniques, preprocessing steps, and analysis tools used in our research, offering a practical framework for combating Android RATs.  
 
-The dataset was originally created by the **Stratosphere Laboratory at the Czech Technical University in Prague**, and we acknowledge their valuable contribution to advancing Android malware detection.  
+
 
 
 ## Data Description
