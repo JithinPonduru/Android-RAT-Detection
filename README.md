@@ -2,9 +2,14 @@
 
 # Android Mischief Dataset
 
-## Introduction
+## Introduction  
 
-The Android Mischief Dataset is a valuable resource for researchers interested in studying network traffic from mobile phones infected with Android Remote Administration Tools (RATs). This dataset was created by the Stratosphere Laboratory at the Czech Technical University in Prague, with the primary aim of aiding in the development of new detection methods for Android RATs.
+The **Android Mischief Dataset** played a crucial role in our research, **["Leveraging Machine Learning for Proactive Detection and Mitigation of Android RATs"](https://link.springer.com/article/10.1007/s11334-024-00572-3)**. Our study utilized this dataset to develop machine learning models capable of identifying and mitigating Android Remote Administration Tools (RATs) based on network traffic patterns.  
+
+All the models and methodologies presented in the paper are available in our **[Rat Detection GitHub Repository](https://github.com/JithinPonduru/Rat-Detection)**. This repository contains the implementation of detection techniques, preprocessing steps, and analysis tools used in our research, offering a practical framework for combating Android RATs.  
+
+The dataset was originally created by the **Stratosphere Laboratory at the Czech Technical University in Prague**, and we acknowledge their valuable contribution to advancing Android malware detection.  
+
 
 ## Data Description
 
